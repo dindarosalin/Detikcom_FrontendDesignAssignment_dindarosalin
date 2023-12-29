@@ -1,0 +1,7 @@
+.hero-img {
+    background-image: url('../../assets/bg-desktop 1.png');
+    background-size: cover;
+    background-position: center;
+    height: 960px;
+    width: 100%;
+}

@@ -1,12 +1,14 @@
-.nav-item {
-    color: white;
+.navbar-nav .nav-link {
+    color: black;
 }
 
-a {
-    color: black;
-    font-weight: bold;
+.navbar-brand img {
+    height: 20px;
 }
 
 nav {
-    background-color: var(--blue);
+    background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
+    width: fit-content;
+    z-index: 10;
 }
+

@@ -1,13 +1,9 @@
-import { Button } from "react-bootstrap"
 import './main-page.css'
-
+import Hero from '../components/hero'
 const MainPage = () => {
   return (
-    <div className="main">
-      <div className="container">
-        <Button className="btn">ini button</Button>
-      </div>
-    </div>
+      <Hero></Hero>
+
   )
 }
 
