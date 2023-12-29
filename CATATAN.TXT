@@ -1,0 +1,13 @@
+-- src
+    |-- components
+    |   |-- header.jsx
+    |   |-- footer.jsx
+    |   |-- Styles
+    |       |-- header.css
+    |       |-- footer.css
+    |-- pages
+    |   |-- main-page.jsx
+    |   |-- main-page.css
+    |-- App.jsx
+    |-- index.css
+    |-- index.js

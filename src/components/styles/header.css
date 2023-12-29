@@ -1,0 +1,12 @@
+.nav-item {
+    color: white;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
+
+nav {
+    background-color: var(--blue);
+}

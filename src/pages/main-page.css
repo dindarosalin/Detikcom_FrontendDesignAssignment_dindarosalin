@@ -1,0 +1,9 @@
+.btn {
+    background-color: var(--green);
+    border: 0px;
+}
+
+.main {
+    background-color: var(--blue);
+}
+
