@@ -7,8 +7,8 @@
 }
 
 nav {
-    background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
-    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.836);
     z-index: 10;
+    font-size: large;
 }
 
