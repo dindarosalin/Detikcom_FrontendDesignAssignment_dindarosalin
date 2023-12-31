@@ -11,3 +11,49 @@
     |-- App.jsx
     |-- index.css
     |-- index.js
+
+
+<Card className="flex-row flex-wrap bg-primary text-white rounded-5">
+              <div className="card-header border-0">
+                <img src="src\assets\map 1 (1).png" alt="" />
+              </div>
+              <div className="card-block px-2 text-start">
+                <Card.Title>
+                  <h2 className="fst-italic fw-bolder">SPECIAL PERFORMANCE</h2>
+                </Card.Title>
+                <Card.Text>
+                  Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta hiburan lainnya!
+                </Card.Text>
+              </div>
+            </Card>
+
+
+<Row className='border rounded-5 bg-primary'>
+            <Col sm={4} className='p-3'>
+              <Card.Img src="src\assets\map 1 (1).png" rounded />
+            </Col>
+            <Col sm={8} className='text-start text-white p-3'>
+              <Card.Title>
+                <h2 className="fst-italic fw-bolder">SPECIAL PERFORMANCE</h2>
+              </Card.Title>
+              <Card.Text>
+                Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta hiburan lainnya!
+              </Card.Text>
+            </Col>
+          </Row>
+
+
+          <div className="card rounded-5 bg-primary p-4">
+              <div className="row no-gutters">
+                <div className="col-auto">
+                  <img src="src\assets\map 1 (1).png" className="img-fluid" alt="" />
+                </div>
+                <div className="col text-start text-white">
+                  <div className="card-block px-2">
+                    <Card.Title>
+                      <h2 className="fst-italic fw-bolder">SPECIAL PERFORMANCE</h2>
+                    </Card.Title>
+                    <p className="card-text">Description adskg Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta hiburan lainnya!</p>
+                  </div>
+                </div>
+              </div>
