@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './styles/berita.css';
 import { artikel } from './data/data-artikel';
-import { Container, Card, Row, Col, Nav } from 'react-bootstrap';
+import { Container, Card, Row, Col, Nav, Button } from 'react-bootstrap';
 import { ImageFill, CameraVideoFill } from 'react-bootstrap-icons';
 
 const Berita = () => {
@@ -50,6 +50,9 @@ const Berita = () => {
           </Col>
         ))}
       </Row>
+      <div className='mt-4 text-center'>
+        <Button className='rounded-pill'>ini  button</Button>
+      </div>
     </Container>
   );
 }
