@@ -1,0 +1,20 @@
+.marquee-container {
+    animation: marquee-scroll linear infinite;
+    white-space: nowrap;
+  }
+  
+  @keyframes marquee-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .img-log{
+    max-width: 216px; 
+    height: 94px;
+    object-fit: cover;
+  }
+

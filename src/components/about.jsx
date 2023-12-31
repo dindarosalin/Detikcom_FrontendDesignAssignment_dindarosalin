@@ -1,4 +1,3 @@
-import './styles/about.css'
 import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap'
 
 const about = () => {
