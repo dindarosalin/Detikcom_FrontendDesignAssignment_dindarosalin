@@ -1,5 +1,5 @@
 import './styles/sponsors.css';
-import sponsorsData from './data-sponsors';
+import sponsorsData from './data/data-sponsors';
 import { useState, useEffect } from 'react';
 
 function Sponsors() {
