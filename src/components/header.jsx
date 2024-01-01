@@ -1,31 +1,47 @@
-import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 import './styles/header.css'
+import { Container, Nav, Button, Navbar } from 'react-bootstrap';
+import { useState } from 'react';
+import * as Icon from 'react-bootstrap-icons';
 
-function header() {
+const Header = () => {
+  const [activeTab, setActiveTab] = useState('home');
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+  };
+
   return (
-    <Container>
-      <Navbar collapseOnSelect expand="sm" 
-      className="position-fixed rounded-pill mt-4 px-4 border mx-auto">
-      <div className='d-flex align-items-center'>
-        <Navbar.Brand href="/" className='pe-5'>
-          <img src="assets/navbar-brand.png" 
-          className="d-flex align-items-center"
-          alt="Navbar Brand" />
+    <Container className='mx-5'>
+    <Navbar expand="sm" variant="light" collapseOnSelect className="justify-content-between rounded-5 mt-4 px-4 d-flex align-items-center fixed-top headnav mx-5 py-3">
+      <Container>
+        <Navbar.Brand href="/">
+          <img src="assets/navbar-brand.png" alt="Navbar Brand" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto gap-5">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#tentang-acara">Tentang Acara</Nav.Link>
-            <Nav.Link href='#galeri'>Galeri</Nav.Link>
-            <Nav.Link href='#berita'>Berita</Nav.Link>
-            <Button variant="primary" className='rounded-pill'>Primary</Button>{' '}
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"> 
+        <Icon.MenuButtonWide />
+        </Navbar.Toggle>
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
+          <Nav className="me-auto gap-3" activeKey={activeTab} onSelect={handleTabChange}>
+            <Nav.Item>
+              <Nav.Link eventKey="home">Home</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="about">Tentang Acara</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="gallery">Galeri</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="berita">Berita</Nav.Link>
+            </Nav.Item>
           </Nav>
-          </Navbar.Collapse>
-      </div>
+          <Button className='rounded-pill'>Register</Button>
+        </Navbar.Collapse>
+      </Container>
     </Navbar>
     </Container>
+
   );
 }
 
-export default header;
+export default Header;

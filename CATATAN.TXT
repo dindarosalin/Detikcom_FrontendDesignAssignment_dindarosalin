@@ -60,3 +60,75 @@
 
 
 https://stackoverflow.com/questions/36433961/how-to-create-a-css-marquee-effect-without-empty-space
+
+
+<Navbar collapseOnSelect expand="sm" 
+      className="position-fixed rounded-pill mt-4 px-4 border mx-auto">
+      <div className='d-flex align-items-center'>
+        <Navbar.Brand href="/" className='pe-5'>
+          <img src="assets/navbar-brand.png" 
+          className="d-flex align-items-center"
+          alt="Navbar Brand" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto gap-5">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#tentang-acara">Tentang Acara</Nav.Link>
+            <Nav.Link href='#galeri'>Galeri</Nav.Link>
+            <Nav.Link href='#berita'>Berita</Nav.Link>
+            <Button variant="primary" className='rounded-pill'>Primary</Button>{' '}
+          </Nav>
+          </Navbar.Collapse>
+      </div>
+    </Navbar>
+
+    <Navbar fill variant="underline" collapseOnSelect expand="sm"  className='justify-content-between rounded-pill mt-4 px-4 d-flex align-items-center fixed-top headnav mx-5 py-3' activeKey={activeTab} onSelect={handleTabChange}>
+        <Nav.Item>
+          <Navbar.Brand href="/" className='pe-5'>
+            <img src="assets/navbar-brand.png"
+              className=""
+              alt="Navbar Brand" />
+          </Navbar.Brand>
+        </Nav.Item>
+        <Nav.Item >
+          <Nav.Link eventKey="home">Home</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="about">Tentang Acara</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="gallery">Galeri</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="berita">Berita</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Button className='rounded-pill'>Register</Button>
+        </Nav.Item>
+      </Navbar>
+
+
+<Navbar collapseOnSelect expand="sm" 
+      className="justify-content-between rounded-pill mt-4 px-4 d-flex align-items-center fixed-top headnav mx-5 py-3">
+        <Container>
+        <div className='d-flex align-items-center'>
+        <Navbar.Brand href="/" className='pe-5'>
+          <img src="assets/navbar-brand.png" 
+          className="d-flex align-items-center"
+          alt="Navbar Brand" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto gap-5">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#tentang-acara">Tentang Acara</Nav.Link>
+            <Nav.Link href='#galeri'>Galeri</Nav.Link>
+            <Nav.Link href='#berita'>Berita</Nav.Link>
+            <Button variant="primary" className='rounded-pill'>Primary</Button>{' '}
+          </Nav>
+          </Navbar.Collapse>
+      </div>
+        </Container>
+      
+    </Navbar>
