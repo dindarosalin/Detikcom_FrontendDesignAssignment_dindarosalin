@@ -36,7 +36,6 @@
     transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
-/* Untuk mengatur link aktif */
 .nav-link.active {
     background-color: rgba(255, 255, 255, 0.5);
     border-color: white; /* Border putih */
@@ -47,8 +46,16 @@
 }
 
 .berita {
-    background-image: url('public/assets/bg-buttom-mobile.jpg');
+    background-image: url('../../../public/assets/bg-buttom-dekstop.jpg');
     background-repeat: no-repeat;
     background-position:bottom center;
     background-size: cover;
+    background-origin: border-box;
+    background-clip: border-box;
+}
+
+@media (max-width: 576px) {
+    .berita {
+        background-image: url('../../../public/assets/bg-buttom-mobile.jpg');
+    }
 }

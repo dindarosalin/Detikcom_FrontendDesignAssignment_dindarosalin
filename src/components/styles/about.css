@@ -3,9 +3,9 @@
 }
 
 .imagee:hover {
-    transform: scale(1.1);
-    /* Ubah angka sesuai dengan kebutuhan, 1.1 akan memperbesar 10% dari ukuran aslinya */
+    transform: scale(1.02);
 }
+
 .cardd {
-    overflow: hidden; /* Memastikan konten di dalam card tidak keluar dari batas frame */
+    overflow: hidden;
   }

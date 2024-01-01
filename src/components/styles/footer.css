@@ -1,5 +1,6 @@
 .bg-footer {
     background: var(--green);
+    border: 0;
 }
 
 .img-footer {
@@ -11,10 +12,11 @@
     border: 0;
     background: none;
 }
-.list-group-horizontal .list-group-item {
-    margin: 0; /* Menghilangkan margin kanan pada list item */
-  }
 
-.list-group-item img{
+.list-group-horizontal .list-group-item {
+    margin: 0;
+}
+
+.list-group-item img {
     height: 32px;
 }

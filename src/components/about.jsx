@@ -22,7 +22,7 @@ const about = () => {
           </Card>
         </Col>
         <Col className=''>
-          <Row className='mb-4 mx-1'>
+          <Row className='mb-4 mx-2'>
             <Card className='text-start rounded-5 border bg-primary text-white'>
               <Card.Body>
                 <Card.Title>
@@ -34,7 +34,7 @@ const about = () => {
               </Card.Body>
             </Card>
           </Row>
-          <Row className='mb-4 mx-1'>
+          <Row className='mb-4 mx-2'>
             <Card className='text-start rounded-5 border bg-primary text-white'>
               <Card.Body>
                 <Card.Title>

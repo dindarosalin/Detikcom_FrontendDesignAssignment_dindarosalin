@@ -21,7 +21,7 @@ const Footer = () => {
           </Col>
           <Col lg={3} md={4} sm={12} className='pt-3'>
             <p className='text-center text-white mb-1'>connect with us</p>
-            <ListGroup horizontal className='border-0 d-flex justify-content-center align-items-center list-group-item-primary list-group-horizontal'>
+            <ListGroup horizontal className='mb-2 border-0 d-flex justify-content-center align-items-center list-group-item-primary list-group-horizontal'>
               <ListGroup.Item className='p-0 me-2'>
                 <Image src='/logo/icons8-facebook.svg' alt='logo social media' />
               </ListGroup.Item>
