@@ -47,7 +47,7 @@
 }
 
 .berita {
-    background-image: url('assets/bg-buttom-dekstop.jpg');
+    background-image: url('public/assets/bg-buttom-mobile.jpg');
     background-repeat: no-repeat;
     background-position:bottom center;
     background-size: cover;

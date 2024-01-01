@@ -1,5 +1,5 @@
 .hero-img {
-    background-image: url('assets/bg-desktop 1.png');
+    background-image: url('public\assets\bg-desktop 1.png');
     background-size: cover;
     background-position: center;
     background-origin: border-box;
@@ -14,7 +14,7 @@
 
 @media (max-width: 576px) {
     .hero-img {
-        background-image: url('assets/bg-mobile 1.png');
+        background-image: url('public/assets/bg-mobile 1.png');
         height: 943px;
     }
 }
