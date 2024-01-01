@@ -1,27 +1,26 @@
-// footer.jsx
 import './styles/footer.css';
 import { Row, Col, Container, Image, ListGroup, } from 'react-bootstrap';
 
 const Footer = () => {
   return (
     <div className='bg-footer'>
-    <Container>
-        <Row>
+      <Container>
+        <Row className='img-foo'>
           <Image
             src='/assets/Mask group.png'
             alt='logo event'
             className='m-3 img-footer mt-4'
           />
         </Row>
-        <Row>
-          <Col lg={8} md={7} sm={12} className='m-3'>
-            <p className='text-white'>
+        <Row className='justify-content-between'>
+          <Col className='m-3'>
+            <p className='text-white text-footer'>
               Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh Detikhealth secara gratis untuk masyarakat Indonesia. Ajak keluarga dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu menangkan hadiah utama serta doorprize dengan total puluhan juta rupiah
             </p>
           </Col>
-          <Col lg={3} md={4} sm={12} className='pt-3'>
+          <Col lg={3} md={4} sm={12} className='pt-3 '>
             <p className='text-center text-white mb-1'>connect with us</p>
-            <ListGroup horizontal className='mb-2 border-0 d-flex justify-content-center align-items-center list-group-item-primary list-group-horizontal'>
+            <ListGroup horizontal className='mb-2 border-0 d-flex justify-content-center list-group-item-primary list-group-horizontal'>
               <ListGroup.Item className='p-0 me-2'>
                 <Image src='/logo/icons8-facebook.svg' alt='logo social media' />
               </ListGroup.Item>
@@ -44,7 +43,7 @@ const Footer = () => {
         <Row>
           <p className='text-white m-3'>Copyright @ 2023 detikcom. All right reserved</p>
         </Row>
-    </Container>
+      </Container>
     </div>
   );
 };

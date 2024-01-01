@@ -15,7 +15,7 @@ const Berita = () => {
     <div className='berita pb-5'>
       <Container className='p-4 pb-5'>
         <div className='text-center'>
-          <h3 className='text-center fw-bolder m-3'>ARTIKEL TERKAIT</h3>
+          <h3 className='text-center fw-bolder m-3 mb-1'>ARTIKEL TERKAIT</h3>
           <Nav fill variant="tabs" className='rounded-pill bg-primary mb-4 d-inline-flex m-4' activeKey={activeTab} onSelect={handleTabChange}>
             <Nav.Item >
               <Nav.Link eventKey="artikel" className='rounded-pill'>Artikel</Nav.Link>
@@ -31,22 +31,28 @@ const Berita = () => {
         <Row xs={1} sm={2} md={3} className='g-4 mb-5 pb-5'>
           {artikel.map((artikel) => (
             <Col key={artikel.id}>
-              <Card className='border-0 position-relative'>
+              <Card className='border-0 position-relative rounded-4 card-artikel'>
                 {activeTab !== 'artikel' && (
-                  <span className={`position-absolute top-0 end-0 m-3 text-white bg-black bg-opacity-50 rounded p-1 ${activeTab !== 'artikel' ? '' : 'd-none'}`}>
+                  <span className={`position-absolute top-0 start-0 m-2 text-white bg-black bg-opacity-50 rounded p-1 ${activeTab !== 'artikel' ? '' : 'd-none'}`}>
                     {activeTab === 'foto' ? <ImageFill className="m-1" /> : <CameraVideoFill className="m-1" />}
                     {activeTab === 'foto' ? artikel.foto : artikel.video}
                   </span>
                 )}
-                <Card.Img variant='top' src={artikel.image} className='rounded-5 card-image p-2' />
-                <Card.Body className='p-2'>
-                  <Card.Title className='mt-3 card-ttl fw-bold'>
-                    {artikel.title}
-                  </Card.Title>
-                  <Card.Text>
-                    {artikel.datetime}
-                  </Card.Text>
-                </Card.Body>
+                <Row sm={1} md={1} lg={1}>
+                  <Col className='p-0'>
+                    <Card.Img variant='top' src={artikel.image} className='rounded-4 card-image' />
+                  </Col>
+                  <Col className='p-0'>
+                    <Card.Body className='p-2 m-2'>
+                      <Card.Title className='mt-3 fw-bold card-title-artikel'>
+                        {artikel.title}
+                      </Card.Title>
+                      <Card.Text className='card-text-artikel'>
+                        {artikel.datetime}
+                      </Card.Text>
+                    </Card.Body>
+                  </Col>
+                </Row>
               </Card>
             </Col>
           ))}

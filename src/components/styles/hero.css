@@ -21,9 +21,11 @@
     .hero-img {
         background-image: url('../../../public/assets/bg-mobile 1.png');
         height: 943px;
+        align-items: flex-start;
     }
 
     .logo-img {
         max-height: 147px;
+        margin-top: 10rem;
     }
 }

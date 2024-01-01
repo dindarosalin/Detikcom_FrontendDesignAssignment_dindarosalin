@@ -5,12 +5,13 @@
 
 .img-footer {
     height: auto;
-    max-width: 20%;
+    max-width: 160px;
 }
 
 .list-group-item {
     border: 0;
     background: none;
+    cursor: pointer;
 }
 
 .list-group-horizontal .list-group-item {
@@ -19,4 +20,15 @@
 
 .list-group-item img {
     height: 32px;
+}
+
+@media (max-width: 768px) {
+    .img-foo {
+        display: block;
+        text-align: center;
+    }
+
+    .bg-footer {
+        text-align: center;
+    }
 }
