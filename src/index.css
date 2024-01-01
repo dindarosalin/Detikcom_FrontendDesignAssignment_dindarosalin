@@ -1,12 +1,15 @@
+/* index.css */
+
 /* Global Style */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
 :root {
     --blue: #326DFE;
-    --green: #59FEBB;
+    --green: #28A997;
     --orange: #FFC73C;
 }
 
-.all {
+body {
     font-family: 'Montserrat', sans-serif;
 }
+

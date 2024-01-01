@@ -10,12 +10,9 @@
     color: var(--orange);
 }
 
-.card {
-    overflow: hidden;
-}
-
 .card-image {
     transition: transform 0.3s ease-in-out;
+    overflow: hidden;
 }
 
 .card-image:hover {
@@ -31,7 +28,8 @@
     font-weight: bolder;
 }
 
-/* Untuk efek hover pada link aktif */
+
+
 .nav-link.active {
     background-color: rgba(255, 255, 255, 0.5);
     border-color: white; /* Border putih */
@@ -44,3 +42,13 @@
     border-color: white; /* Border putih */
 }
 
+.card {
+    background: none;
+}
+
+.berita {
+    background-image: url('assets/bg-buttom-dekstop.jpg');
+    background-repeat: no-repeat;
+    background-position:bottom center;
+    background-size: cover;
+}

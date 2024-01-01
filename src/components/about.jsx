@@ -8,7 +8,7 @@ const about = () => {
         <Col>
           <Card className='rounded-5 border bg-primary mb-3'>
             <div className='embed-responsive embed-responsive-4by3 m-4 mb-0 cardd rounded-5'>
-              <Card.Img variant="top" src="src\assets\map 1.png"
+              <Card.Img variant="top" src="assets\map 1.png"
                 className='embed-responsive-item imagee' />
             </div>
             <Card.Body className='text-start text-white m-2 mt-0'>
@@ -48,8 +48,8 @@ const about = () => {
           </Row>
           <Row className='rounded-5 border p-3 bg-primary mx-1'>
             <Col lg={4} className='order-lg-1 pt-2 cardd'>
-              <Image src='src\assets\map 1 (1).png' className='img-fluid d-none d-lg-block mb-3 imagee' alt='Gambar Artis Desktop'></Image>
-              <Image src='src\assets\map 1 mobile.png' className='img-fluid d-lg-none mb-3 imagee' alt='Gambar Artis Mobile'></Image>
+              <Image src='assets\map 1 (1).png' className='img-fluid d-none d-lg-block mb-3 imagee' alt='Gambar Artis Desktop'></Image>
+              <Image src='assets\map 1 mobile.png' className='img-fluid d-lg-none mb-3 imagee' alt='Gambar Artis Mobile'></Image>
             </Col>
             <Col lg={8} className='order-lg-2'>
               <Card.Body className='text-start text-white'>

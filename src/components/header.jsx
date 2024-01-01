@@ -8,7 +8,7 @@ function header() {
       className="position-fixed rounded-pill mt-4 px-4 border mx-auto">
       <div className='d-flex align-items-center'>
         <Navbar.Brand href="/" className='pe-5'>
-          <img src="src/assets/navbar-brand.png" 
+          <img src="assets/navbar-brand.png" 
           className="d-flex align-items-center"
           alt="Navbar Brand" />
         </Navbar.Brand>
