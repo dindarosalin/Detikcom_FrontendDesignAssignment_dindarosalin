@@ -16,8 +16,8 @@ const Berita = () => {
       <Container className='p-4 pb-5'>
         <div className='text-center'>
           <h3 className='text-center fw-bolder m-3 mb-1'>ARTIKEL TERKAIT</h3>
-          <Nav fill variant="tabs" className='rounded-pill bg-primary mb-4 d-inline-flex m-4' activeKey={activeTab} onSelect={handleTabChange}>
-            <Nav.Item >
+          <Nav fill variant="tabs" className='myNav rounded-pill bg-primary mb-4 d-inline-flex m-4' activeKey={activeTab} onSelect={handleTabChange}>
+            <Nav.Item>
               <Nav.Link eventKey="artikel" className='rounded-pill'>Artikel</Nav.Link>
             </Nav.Item>
             <Nav.Item>

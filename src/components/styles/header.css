@@ -3,8 +3,8 @@
 }
 
 .headnav {
-    background-color: rgba(255, 255, 255, 0.836);
-    backdrop-filter: blur(2px);
+    background-color: #FFFFFF80;
+    backdrop-filter: blur(5px);
 }
 
 
@@ -15,4 +15,17 @@
 
 .nav-link.active {
     background-color: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:not(.collapsed):active {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-item .nav-link.active {
+  background-color: transparent;
+  color: inherit;
+  border-bottom: none;
 }

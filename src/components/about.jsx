@@ -54,7 +54,7 @@ const about = () => {
             <Col lg={8} className='order-lg-2'>
               <Card.Body className='text-start text-white'>
                 <Card.Title>
-                  <h2 className='fst-italic fw-bolder'>GRATIS DAN BERHADIAH</h2>
+                  <h2 className='fst-italic fw-bolder'>SPECIAL PERFORMANCE</h2>
                 </Card.Title>
                 <Card.Text>
                   Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta hiburan lainnya!
