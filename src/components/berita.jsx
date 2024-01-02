@@ -16,7 +16,7 @@ const Berita = () => {
       <Container className='p-4 pb-5'>
         <div className='text-center'>
           <h3 className='text-center fw-bolder m-3 mb-1'>ARTIKEL TERKAIT</h3>
-          <Nav fill variant="tabs" className='myNav rounded-pill bg-primary mb-4 d-inline-flex m-4' activeKey={activeTab} onSelect={handleTabChange}>
+          <Nav fill variant="tabs" className='nav-berita rounded-pill mb-4 d-inline-flex m-4' activeKey={activeTab} onSelect={handleTabChange}>
             <Nav.Item>
               <Nav.Link eventKey="artikel" className='rounded-pill'>Artikel</Nav.Link>
             </Nav.Item>
@@ -57,8 +57,8 @@ const Berita = () => {
             </Col>
           ))}
         </Row>
-        <div className='mt-3 text-center'>
-          <Button className='rounded-pill mb-5'>ini  button</Button>
+        <div className='mt-3 text-center '>
+          <Button className='rounded-pill mb-5 btn-berita'>LIHAT LEBIH BANYAK</Button>
         </div>
       </Container>
     </div>

@@ -8,4 +8,42 @@
 
 .cardd {
     overflow: hidden;
-  }
+}
+
+.card-title h3 {
+    font-weight: 900;
+    text-shadow: 2px 2px #00000040;
+}
+
+.card-about .col .card-satu, .card-about .col .card-dua, .card-about .col .card-tiga, .card-empat{
+    background: linear-gradient(236.72deg, #59FFB9 -30.09%, #326CFF 71.21%);
+    transition: background 300ms ease-out;
+}
+
+.card-about .card-satu:hover {
+    background: linear-gradient(157.22deg, #59FFB9 -34.83%, #326CFF 84.53%);
+}
+
+
+.card-about .card-dua:hover {
+    background: linear-gradient(98.55deg, #59FFB9 -12.36%, #326CFF 54.36%);
+}
+
+
+.card-about .card-tiga:hover {
+    background: linear-gradient(102.87deg, #59FFB9 -19.2%, #326CFF 57.41%);
+}
+
+.card-about .card-empat:hover {
+    background: linear-gradient(102.87deg, #59FFB9 -19.2%, #326CFF 57.41%);
+}
+
+.btn-about {
+    background-color: var(--orange);
+    box-shadow: 0px 18px 40px 12px #FFD36759;
+}
+
+.btn-about:hover {
+    background-color: var(--orange-secondary);
+    box-shadow: 0px 18px 40px 12px #FF9A3C40;
+}

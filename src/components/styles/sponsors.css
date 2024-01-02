@@ -9,3 +9,6 @@
     object-fit: cover;
   }
 
+  .sponsors {
+    background: var(--primary-gradient);
+  }

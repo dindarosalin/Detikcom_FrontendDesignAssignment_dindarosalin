@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="mb-5 d-flex flex-column">
           <Image src="assets/logo-event 2.png" className='logo-img' />
           <div className='my-3'>
-            <Button className='rounded-pill mb-5'>ini Button</Button>
+            <Button className='rounded-pill mb-5 btn-hero'>ini Button</Button>
           </div>
         </div>
       </Container>

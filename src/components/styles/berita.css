@@ -1,25 +1,27 @@
-.myNav .nav-link {
+.nav-berita {
+    background: var(--primary-gradient);
+}
+
+.nav-berita .nav-link {
     color: white;
     font-size: medium;
     font-weight: 600;
 }
 
-.myNav .nav-link.active {
-    background-color: white;
-    color: black;
-    border: none;
-  }
-  
-  /* Aturan untuk menghapus gaya saat hover */
-  .myNav .nav-link:hover {
+.nav-berita .nav-link.active {
+    background-color: #FFFFFF80;
+    color: white;
+}
+
+.nav-berita .nav-link:hover {
     text-decoration: none;
     background-color: none;
     border: none;
-  }
+}
 
-  .icon-fv {
+.icon-fv {
     z-index: 10;
-  }
+}
 
 .card-title-artikel {
     -webkit-line-clamp: 2;
@@ -51,7 +53,7 @@
 .card-image:hover {
     transform: scale(1.05);
     cursor: pointer;
-}  
+}
 
 .card {
     background: none;
@@ -64,6 +66,16 @@
     background-size: cover;
     background-origin: border-box;
     background-clip: border-box;
+}
+
+.btn-berita {
+    background-color: var(--orange);
+    box-shadow: 0px 18px 40px 12px #FFD36759;
+}
+
+.btn-berita:hover {
+    background-color: var(--orange-secondary);
+    box-shadow: 0px 18px 40px 12px #FF9A3C40;
 }
 
 @media (min-width: 992px) {
@@ -84,14 +96,13 @@
     }
 
     .card-image {
-      object-fit: cover;
+        object-fit: cover;
     }
-  
+
     .card-title-artikel {
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
-  }
-  
+}

@@ -7,7 +7,6 @@
     backdrop-filter: blur(5px);
 }
 
-
 .headnav .nav-item a {
     color: black;
     font-weight: 600;
@@ -25,6 +24,20 @@
 }
 
 .nav-item .nav-link.active {
-  background-color: transparent;
+  background-color: none;
   border-bottom: none;
+}
+
+.nav-item .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-item button {
+  background: var(--primary-gradient);
+  transition: all 300ms ease-in-out ;
+  animation-timing-function: linear;
+}
+
+.nav-item button:hover {
+  background: var(--secondary-gradient);
 }

@@ -31,16 +31,16 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav" className=" justify-content-end text-center me-auto gap-3 ">
             <Nav className="me-0 gap-3" onSelect={handleTabChange}>
               <Nav.Item>
-                <Nav.Link eventKey="home">Home</Nav.Link>
+                <Nav.Link eventKey="home" className='rounded-pill'>Home</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="about">Tentang Acara</Nav.Link>
+                <Nav.Link eventKey="about" className='rounded-pill'>Tentang Acara</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="gallery">Galeri</Nav.Link>
+                <Nav.Link eventKey="gallery" className='rounded-pill'>Galeri</Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="berita">Berita</Nav.Link>
+                <Nav.Link eventKey="berita" className='rounded-pill'>Berita</Nav.Link>
               </Nav.Item>
               <Nav.Item className='d-grid d-sm-block d-md-none'>
                 <Button className='rounded-pill'>Register</Button>

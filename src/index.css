@@ -7,9 +7,11 @@
     --blue: #326DFE;
     --green: #28A997;
     --orange: #FFC73C;
+    --orange-secondary: #FF9A3C;
+    --primary-gradient: linear-gradient(257.55deg, #59FFB9 0%, #326CFF 100%);
+    --secondary-gradient: linear-gradient(270.77deg, #326CFF 0%, #59FFB9 100%);
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
