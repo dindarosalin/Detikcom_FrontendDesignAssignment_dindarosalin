@@ -26,6 +26,5 @@
 
 .nav-item .nav-link.active {
   background-color: transparent;
-  color: inherit;
   border-bottom: none;
 }
