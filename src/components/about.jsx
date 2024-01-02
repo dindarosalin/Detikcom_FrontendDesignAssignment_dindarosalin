@@ -47,7 +47,7 @@ const about = () => {
             </Card>
           </Row>
           <Row className='rounded-5 border mx-1 card-empat align-items-center p-3'>
-            <Col lg={4} className='order-lg-1 cardd'>
+            <Col lg={4} className='order-lg-1 cardd p-0 rounded-4'>
               <Image src='assets\map 1 (1).png' className='img-fluid d-none d-lg-block imagee' alt='Gambar Artis Desktop'></Image>
               <Image src='assets\map 1 mobile.png' className='img-fluid d-lg-none my-2 imagee' alt='Gambar Artis Mobile'></Image>
             </Col>

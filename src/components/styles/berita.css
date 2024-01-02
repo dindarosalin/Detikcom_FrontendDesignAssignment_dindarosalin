@@ -40,19 +40,17 @@
     }
 }
 
-.card {
+.card-imagee {
     overflow: hidden;
+    position: relative;
 }
 
-.card-image {
-    transition: transform 0.3s ease-in-out;
-    object-fit: cover;
-    overflow: hidden;
+.card-imagee img {
+    transition: transform 0.3s ease-out;
 }
 
-.card-image:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+.card-imagee:hover img {
+    transform: scale(1.1);
 }
 
 .card {

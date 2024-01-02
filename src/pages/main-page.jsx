@@ -4,6 +4,7 @@ import About from '../components/about'
 import Sponsors from '../components/sponsors'
 import Gallery from '../components/gallery'
 import Berita from '../components/berita'
+import  Artikel  from '../components/artikel'
 
 const MainPage = () => {
   return (
@@ -13,6 +14,7 @@ const MainPage = () => {
       <Sponsors></Sponsors>
       <Gallery></Gallery>
       <Berita></Berita>
+      <Artikel></Artikel>
     </>
   )
 }
