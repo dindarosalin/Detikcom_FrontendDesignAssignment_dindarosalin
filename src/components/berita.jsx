@@ -33,13 +33,13 @@ const Berita = () => {
             <Col key={artikel.id}>
               <Card className='border-0 position-relative rounded-4 card-artikel'>
                 {activeTab !== 'artikel' && (
-                  <span className={`position-absolute top-0 start-0 m-2 text-white bg-black bg-opacity-50 rounded p-1 ${activeTab !== 'artikel' ? '' : 'd-none'}`}>
+                  <span className={`position-absolute top-0 start-0 m-3 mt-4 text-white bg-black bg-opacity-50 rounded p-1 icon-fv ${activeTab !== 'artikel' ? '' : 'd-none'}`}>
                     {activeTab === 'foto' ? <ImageFill className="m-1" /> : <CameraVideoFill className="m-1" />}
                     {activeTab === 'foto' ? artikel.foto : artikel.video}
                   </span>
                 )}
                 <Row sm={1} md={1} lg={1}>
-                  <Col className='p-0'>
+                  <Col className='p-3 card-imagee'>
                     <Card.Img variant='top' src={artikel.image} className='rounded-4 card-image' />
                   </Col>
                   <Col className='p-0'>
