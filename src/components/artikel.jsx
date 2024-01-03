@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import './styles/berita.css';
+import './styles/artikel.css';
 import { artikel } from './data/data-artikel';
-import { Container, Row, Col, Nav, Button, Image } from 'react-bootstrap';
+import { Container, Card, Nav, Button, Row } from 'react-bootstrap';
 import { ImageFill, CameraVideoFill } from 'react-bootstrap-icons';
 
-const Artikel = () => {
+const Berita = () => {
     const [activeTab, setActiveTab] = useState('artikel');
 
     const handleTabChange = (tab) => {
@@ -28,36 +28,28 @@ const Artikel = () => {
                         </Nav.Item>
                     </Nav>
                 </div>
-                <Row xs={1} sm={2} md={3} className='g-4 mb-5 pb-5'>
+                <Row xs={1} sm={2} md={3} className=''>
                     {artikel.map((artikel) => (
-                        <Col key={artikel.id}>
-                            <div className='border-0 position-relative rounded-4 card-artikel'>
-                                {activeTab !== 'artikel' && (
-                                    <span className={`position-absolute top-0 start-0 m-3 mt-4 text-white bg-black bg-opacity-50 rounded p-1 icon-fv ${activeTab !== 'artikel' ? '' : 'd-none'}`}>
+                        <Card key={artikel.id} className='card-berita border-0'>
+                            {activeTab !== 'artikel' && (
+                                <section>
+                                    <span className={`position-absolute top-0 end-0 m-2 me-3 text-white bg-black bg-opacity-50 rounded p-1 icon-fv d-none d-md-block ${activeTab !== 'artikel' ? '' : 'd-none'}`}>
+                                        {activeTab === 'foto' ? <ImageFill className="m-1" /> : <CameraVideoFill className="m-1" />}
+                                        {activeTab === 'foto' ? artikel.foto : artikel.video}
+                                    </span><span className={`position-absolute top-0 start-0 m-3 text-white bg-black bg-opacity-50 rounded p-1 icon-fv d-sm-block d-md-none d-lg-none ${activeTab !== 'artikel' ? '' : 'd-none'}`}>
                                         {activeTab === 'foto' ? <ImageFill className="m-1" /> : <CameraVideoFill className="m-1" />}
                                         {activeTab === 'foto' ? artikel.foto : artikel.video}
                                     </span>
-                                )}
-                                <Row md={1} lg={1} className='align-items-center d-flex'>
-                                    <Col sm={12} md={4} className='card-imagee'>
-                                        <div className='d-flex flex-row flex-md-column justify-content-center justify-content-md-start'>
-                                            <Image variant='top' src={artikel.image} className='rounded-4 card-image d-block d-md-none' />
-                                            <Image variant='top' src={artikel.image} className='rounded-4 card-image ratio ratio-1x1 d-none d-md-block' />
-                                        </div>
-                                    </Col>
-                                    <Col sm={12} md={8} className='p-0'>
-                                        <div className='p-2 m-2'>
-                                            <h5 className='mt-3 fw-bold card-title-artikel'>
-                                                {artikel.title}
-                                            </h5>
-                                            <p className='card-text-artikel'>
-                                                {artikel.datetime}
-                                            </p>
-                                        </div>
-                                    </Col>
-                                </Row>
-                            </div>
-                        </Col>
+                                </section>
+                            )}
+                            <Card.Img variant="top" src={artikel.image} className='m-auto' />
+                            <Card.Body>
+                                <Card.Title className='card-tittle-artikel'>{artikel.title}</Card.Title>
+                                <Card.Text className='card-text-artikel'>
+                                    {artikel.datetime}
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
                     ))}
                 </Row>
                 <div className='mt-3 text-center '>
@@ -68,4 +60,4 @@ const Artikel = () => {
     );
 }
 
-export default Artikel;
+export default Berita;

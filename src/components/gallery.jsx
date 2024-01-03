@@ -35,17 +35,17 @@ function Gallery() {
       >
         {thumbnailcl.map((imageData) => (
           <Carousel.Item key={imageData.id}>
-            <img className="rounded-3 gall-img" src={imageData.image} alt={imageData.alt} />
+            <img className="rounded-3 ratio ratio-16x9 gall-img" src={imageData.image} alt={imageData.alt} />
           </Carousel.Item>
         ))}
       </Carousel>
       <Row className='justify-content-center'>
         {thumbnailbw.map((thumb) => (
-          <Col key={thumb.id} className='mb-3'>
+          <Col key={thumb.id} className='mb-3 p-2'>
             <Image
               src={thumb.id === selectedThumb?.id ? selectedThumb.image : thumb.image}
               alt={thumb.alt}
-              className='thumb-img rounded-3'
+              className='thumb-img ratio ratio-16x9 rounded-3'
               onClick={() => changeCarouselImage(thumb.id)}
             />
           </Col>
