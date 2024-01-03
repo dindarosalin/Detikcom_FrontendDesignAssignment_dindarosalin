@@ -65,7 +65,7 @@ const about = () => {
         </Col>
       </Row>
       <Button className='rounded-pill btn-about'>
-        <a href="https://event.detik.com/" target="_blank" rel="noopener noreferrer" className='text-white text-decoration-none'>DAFTAR SEKARANG</a>
+        <a href="https://event.detik.com/" target="_blank" rel="noopener noreferrer" className='text-white text-decoration-none fw-medium'>DAFTAR SEKARANG</a>
       </Button>
     </Container>
   )

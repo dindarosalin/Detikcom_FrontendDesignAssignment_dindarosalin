@@ -33,7 +33,7 @@ function Gallery() {
         onSelect={handleSelect}
         nextIcon={<Icon.ArrowRightCircleFill size={20} />}
         prevIcon={<Icon.ArrowLeftCircleFill size={20} />}
-        className='mb-4'
+        className='mb-2'
       >
         {thumbnailcl.map((imageData) => (
           <Carousel.Item key={imageData.id}>
@@ -43,11 +43,11 @@ function Gallery() {
       </Carousel>
       <Row className='justify-content-center'>
         {thumbnailbw.map((thumb) => (
-          <Col key={thumb.id} className='mb-3 p-2'>
+          <Col key={thumb.id} className='mb-3 p-1'>
             <Image
               src={thumb.id === selectedThumb?.id ? selectedThumb.image : thumb.image}
               alt={thumb.alt}
-              className='thumb-img ratio ratio-16x9 rounded-3'
+              className='thumb-img ratio ratio-16x9 rounded'
               onClick={() => changeCarouselImage(thumb.id)}
             />
           </Col>
