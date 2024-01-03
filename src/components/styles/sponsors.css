@@ -1,14 +1,14 @@
 .marquee-container {
-    animation: marquee-scroll linear infinite;
-    white-space: nowrap;
-  }
+  animation: marquee-scroll linear infinite;
+  white-space: nowrap;
+}
 
-  .img-log{
-    max-width: 216px; 
-    height: 94px;
-    object-fit: cover;
-  }
+.img-log {
+  max-width: 216px;
+  height: 94px;
+  object-fit: contain;
+}
 
-  .sponsors {
-    background: var(--primary-gradient);
-  }
+.sponsors {
+  background: var(--primary-gradient);
+}

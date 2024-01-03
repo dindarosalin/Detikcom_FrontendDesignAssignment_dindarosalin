@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className='bg-footer'>
       <Container>
-        <Row className='img-foo'>
+        <Row className='img-foo text-center'>
           <Image
             src='/assets/Mask group.png'
             alt='logo event'

@@ -28,8 +28,8 @@ const Header = () => {
           >
             {expanded ? <Icon.X size={28} /> : <Icon.MenuButtonWide size={24} />}
           </Navbar.Toggle>
-          <Navbar.Collapse id="responsive-navbar-nav" className=" justify-content-end text-center me-auto gap-3 ">
-            <Nav className="me-0 gap-3" onSelect={handleTabChange}>
+          <Navbar.Collapse id="responsive-navbar-nav" className=" justify-content-end text-center me-auto gap-3">
+            <Nav className="gap-sm-2 gap-md-5" onSelect={handleTabChange}>
               <Nav.Item>
                 <Nav.Link eventKey="home" className='rounded-pill'>Home</Nav.Link>
               </Nav.Item>
