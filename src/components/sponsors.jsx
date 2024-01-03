@@ -21,7 +21,7 @@ function Sponsors() {
   }, [sponsorCount]);
 
   return (
-    <div className='sponsors py-4'>
+    <div className='sponsors py-5 my-5'>
       <h3 className='text-center text-white fw-bolder m-3'>DIDUKUNG OLEH:</h3>
       <div className="marquee-container d-flex align-items-center overflow-hidden">
         {totalSponsors.map((sponsor, index) => (

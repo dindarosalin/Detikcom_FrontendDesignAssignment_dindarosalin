@@ -22,8 +22,10 @@ function Gallery() {
   };
 
   return (
-    <Container className='my-5 p-4 text-center'>
-      <h3 className='text-center fw-bolder mb-3'>GALERI SUDIRMAN RUN 2022</h3>
+    <Container id='gallery' className='my-5 p-5 text-center'>
+      <div className='mt-5'>
+        <h2 className='text-center fw-bolder mb-3'>GALERI SUDIRMAN RUN 2022</h2>
+      </div>
       <Carousel 
         slide={false}
         indicators={false}

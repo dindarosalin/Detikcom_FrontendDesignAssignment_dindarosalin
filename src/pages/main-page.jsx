@@ -8,11 +8,11 @@ import  Artikel  from '../components/artikel'
 const MainPage = () => {
   return (
     <>
-      <Hero></Hero>
-      <About></About>
-      <Sponsors></Sponsors>
-      <Gallery></Gallery>
-      <Artikel></Artikel>
+      <Hero id='hero'></Hero>
+      <About id='about'></About>
+      <Sponsors id='sponsors'></Sponsors>
+      <Gallery id='galeri'></Gallery>
+      <Artikel id='berita'></Artikel>
     </>
   )
 }

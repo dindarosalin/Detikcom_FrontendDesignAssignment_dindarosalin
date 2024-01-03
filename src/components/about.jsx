@@ -3,7 +3,7 @@ import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap'
 
 const about = () => {
   return (
-    <Container className='text-center mt-5 py-5'>
+    <Container id='about' className='text-center mt-5 py-5'>
       <Row expand='md' className='mb-4 card-about'>
         <Col>
           <Card className='rounded-5 border mb-3 card-satu'>
@@ -64,7 +64,9 @@ const about = () => {
           </Row>
         </Col>
       </Row>
-      <Button className='rounded-pill btn-about'>DAFTAR SEKARANG</Button>
+      <Button className='rounded-pill btn-about'>
+        <a href="https://event.detik.com/" target="_blank" rel="noopener noreferrer" className='text-white text-decoration-none'>DAFTAR SEKARANG</a>
+      </Button>
     </Container>
   )
 }

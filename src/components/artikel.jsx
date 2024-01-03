@@ -12,7 +12,7 @@ const Berita = () => {
     };
 
     return (
-        <div className='berita pb-5'>
+        <div id='berita' className='berita pb-5'>
             <Container className='p-4 pb-5'>
                 <div className='text-center'>
                     <h3 className='text-center fw-bolder m-3 mb-1'>ARTIKEL TERKAIT</h3>
@@ -53,7 +53,9 @@ const Berita = () => {
                     ))}
                 </Row>
                 <div className='mt-3 text-center '>
-                    <Button className='rounded-pill mb-5 btn-berita'>LIHAT LEBIH BANYAK</Button>
+                    <Button className='rounded-pill btn-about'>
+                        <a href="https://www.detik.com/search/searchall?query=fun+run&siteid=2" target="_blank" rel="noopener noreferrer" className='text-white text-decoration-none'>LIHAT LEBIH BANYAK</a>
+                    </Button>
                 </div>
             </Container>
         </div>
